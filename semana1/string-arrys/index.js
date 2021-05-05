@@ -79,3 +79,21 @@ listaDeTarefas.splice(indice,[1]);
 
 console.log(listaDeTarefas);
 */
+
+// ---------> Desafio <-----------
+
+/*
+let frase = prompt("Digite uma frase.")
+
+let quebra = frase.split(" ");
+
+console.log(quebra);
+
+
+
+let dados = ["Banana", "Morango", "Abacaxi", "Laranja", "Ameixa"];
+
+let indice = dados.includes("Abacaxi");
+
+console.log(dados.length, indice)
+*/
