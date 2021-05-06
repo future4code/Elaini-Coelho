@@ -105,4 +105,7 @@ function divisao() {
     return 30 / 3
 }
 // console.log(divisao(30, 3))
-
+function chamar (soma, subtracao, multiplicação, divisao)) {
+    let primeira = soma 
+    return primeira
+}
