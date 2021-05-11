@@ -205,10 +205,28 @@ const valorTotal = () => {
     switch (tipoDeJogo) {
         case "in":
             valorFinal = valorFinal * valorDolar
-            console.log(`Preço final US$ ${valorFinal}`)
+            console.log(`
+            ---Dados da compra--- 
+            Nome do cliente:  ${nomeCompleto}
+            Tipo do jogo:  ${tipoDeJogo}
+            Etapa do jogo: ${etapaDoJogo}
+            Categoria:  ${categoriaDoJogo}
+            Quantidade de Ingressos:  ${ingressos}
+            ---Valores--- 
+            Valor do ingresso:  ${categoriaDoJogo}
+            Valor total:  U$ ${valorFinal}`)
             break
         case "do":
-            console.log(`Valor final R$ ${valorFinal}`)
+            console.log(
+                `---Dados da compra--- 
+            Nome do cliente:  ${nomeCompleto}
+            Tipo do jogo:  ${tipoDeJogo}
+            Etapa do jogo: ${etapaDoJogo}
+            Categoria:  ${categoriaDoJogo}
+            Quantidade de Ingressos:  ${ingressos}
+            ---Valores--- 
+            Valor do ingresso:  ${categoriaDoJogo}
+            Valor total:  U$ ${valorFinal}`)
     }
 
 }
