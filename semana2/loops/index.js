@@ -68,14 +68,51 @@ const array = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
 //     console.log(divide)
 // }
 
-const imprimirPares = (array)=>{
-    let arrayUm = []
-    for(let i=0; i<numero.length; i++){
-        if(array[i] % 2 === 0){
-            arrayUm.push(array[i])
-        }
-    }
+// const numeroPar = (numero) => {
+//     const restoDivisao = numero % 2;
+//     if (restoDivisao == 0) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
 
-    console.log(arrayUm)
-}
-imprimirPares()
+// const imprimePares = (array) => {
+//     let numerosPares = []
+//     for(numero of array) {
+//         if (numeroPar(numero)) {
+//             numerosPares.push(numero)
+//         }
+//     }
+//      console.log(numerosPares)
+// } 
+// imprimePares(array)
+
+// const elementosArray = (array) => {
+//     let elementos = []
+//     for(let i = 0; i < array.length; i++) {
+//         elementos.push(`O elemento do índex ${i} é: ${array[i]}`)
+//     }
+//     console.log(elementos)
+// }
+// elementosArray(array)
+
+// const maiorMenor = (array) => {
+//     let valorMaximo = 40
+//     let valorMinimo = 100
+
+//     for(elemento of array) {
+//         if (elemento < valorMinimo) {
+//             valorMinimo = elemento
+//         }
+//         else if (elemento > valorMaximo) {
+//             valorMaximo = elemento
+//         }
+//     }
+//     console.log(`Valor minino é de ${valorMinimo} e de valor maximo é ${valorMaximo}`)
+// }
+// maiorMenor(array)
+
+
+// -------- Desafio
+
