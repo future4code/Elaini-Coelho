@@ -147,7 +147,7 @@ function segundoMaiorEMenor(array) {
       for (let i = 0; i < (array.length - 1); i++) {
 
          if (listaOrdenada[i] > listaOrdenada[i+1]){
-            
+
             troca = listaOrdenada[i+1]
             listaOrdenada[i+1] = listaOrdenada[i]
             listaOrdenada[i] = troca
@@ -165,7 +165,24 @@ function segundoMaiorEMenor(array) {
 //Exercício 11
 
 function ordenaArray(array) {
-   // implemente sua lógica aqui
+   
+   let listaOrdenada = array
+
+   for (_ of array) {
+
+      for (let i = 0; i < (array.length - 1); i++) {
+
+         if (listaOrdenada[i] > listaOrdenada[i+1]){
+            
+            troca = listaOrdenada[i+1]
+            listaOrdenada[i+1] = listaOrdenada[i]
+            listaOrdenada[i] = troca
+         }
+
+      }
+   }
+
+   return listaOrdenada
 }
 
 // Exercício 12
