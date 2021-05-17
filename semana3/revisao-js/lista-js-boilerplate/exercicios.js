@@ -11,9 +11,15 @@ function inverteArray(array) {
 //Exercício 2
 
 function retornaNumerosParesElevadosADois (array) {
+  let paresAoQuadrado = []
+  for(elemento of array) {
+     if (elemento % 2 === 0) {
+        paresAoQuadrado.push(elemento**2)
+     }
+  } 
+   return paresAoQuadrado
 }
 
-retornaNumerosParesElevadosADois()
 //Exercício 3
 
 function retornaNumerosPares (array) {
