@@ -256,13 +256,28 @@ const arrayDePessoas = [
 // Exercício 16, letra A
 
 function maioresDe18(arrayDePessoas) {
-   // let maioresDeIdade = []
-   // let menoresDeIdade = []
+   let maioresDeIdade = []
+   
+   for (pessoa of arrayDePessoas){
+      if (pessoa.idade >= 20) {
+         maioresDeIdade.push(pessoa)
+      }
+   }
+
+   return maioresDeIdade
 }
 // Exercício 16, letra B
 
 function menoresDe18(arrayDePessoas) {
-   // implemente sua lógica aqui
+   let menoresDeIdade = []
+   
+   for (pessoa of arrayDePessoas){
+      if (pessoa.idade < 20) {
+         menoresDeIdade.push(pessoa)
+      }
+   }
+
+   return menoresDeIdade
 }
 
 // Exercício 17, letra A
