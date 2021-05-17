@@ -139,7 +139,27 @@ function comparaDoisNumeros(num1, num2) {
 // Exercício 10
 
 function segundoMaiorEMenor(array) {
-   // implemente sua lógica aqui
+   
+   let listaOrdenada = array
+
+   for (_ of array) {
+
+      for (let i = 0; i < (array.length - 1); i++) {
+
+         if (listaOrdenada[i] > listaOrdenada[i+1]){
+            
+            troca = listaOrdenada[i+1]
+            listaOrdenada[i+1] = listaOrdenada[i]
+            listaOrdenada[i] = troca
+         }
+
+      }
+   }
+
+   indexSegundoMenor = 1
+   indexSegundoMaior = array.length - 2
+
+   return [listaOrdenada[indexSegundoMaior], listaOrdenada[indexSegundoMenor]]
 }
 
 //Exercício 11
