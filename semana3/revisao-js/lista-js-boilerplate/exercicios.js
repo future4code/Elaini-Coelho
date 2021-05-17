@@ -45,19 +45,33 @@ function retornaMaiorNumero(array) {
 //Exercício 5
 
 function retornaQuantidadeElementos (array) {
-   return array.length()
+   return array.length
 }
 
 //Exercício 6
 
 function retornaExpressoesBooleanas() {
-   // implemente sua lógica aqui
+   const booleano1 = true
+   const booleano2 = false
+   const booleano3 = !booleano2 
+   const booleano4 = !booleano3 
+
+   let respostas = []
+
+   respostas.push(booleano1 && booleano2 && !booleano4)
+   respostas.push((booleano1 && booleano2) || !booleano3)
+   respostas.push((booleano2 || booleano3) && (booleano4 || booleano1))
+   respostas.push(!(booleano2 && booleano3) || !(booleano1 && booleano3))
+   respostas.push(!(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3))
+
+   return respostas
 }
 
 //Exercício 7
 
 function retornaNNumerosPares(n) {
-   // implemente sua lógica aqui
+   
+
 }
 
 // Exercício 8
@@ -120,9 +134,9 @@ const arrayDePessoas = [
 // Exercício 16, letra A
 
 function maioresDe18(arrayDePessoas) {
-   // implemente sua lógica aqui
+   // let maioresDeIdade = []
+   // let menoresDeIdade = []
 }
-
 // Exercício 16, letra B
 
 function menoresDe18(arrayDePessoas) {
@@ -211,5 +225,5 @@ const contas = [
 ]
 
 function atualizaSaldo() {
-  // implemente sua lógica aqui
+  
 }
