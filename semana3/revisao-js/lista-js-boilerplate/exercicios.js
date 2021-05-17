@@ -33,13 +33,19 @@ function retornaNumerosPares (array) {
 //Exercício 4
 
 function retornaMaiorNumero(array) {
-   // implemente sua lógica aqui
+  let valorMinimo = 40
+  for (elemento of array) {
+     if ( elemento > valorMinimo) {
+        return elemento 
+     }
+   
+  }
+   return valorMinimo
 }
-
 //Exercício 5
 
 function retornaQuantidadeElementos (array) {
-   // implemente sua lógica aqui
+   return array.length()
 }
 
 //Exercício 6
