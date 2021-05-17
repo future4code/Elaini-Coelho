@@ -19,11 +19,15 @@ function retornaNumerosParesElevadosADois (array) {
   } 
    return paresAoQuadrado
 }
-
 //Exercício 3
 
 function retornaNumerosPares (array) {
-   // implemente sua lógica aqui
+   let recebePares = []
+   for (elemento of array) {
+      if (elemento % 2 === 0)
+      recebePares.push(elemento)
+   }
+   return recebePares
 }
 
 //Exercício 4
