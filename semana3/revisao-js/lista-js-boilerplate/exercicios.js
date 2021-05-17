@@ -70,7 +70,20 @@ function retornaExpressoesBooleanas() {
 //Exercício 7
 
 function retornaNNumerosPares(n) {
-   
+   let pares = []
+   let numero = 0
+
+   while (pares.length < n) {
+      
+      if (numero % 2 === 0) {
+         pares.push(numero)
+      }
+
+      numero++
+
+   }
+
+   return pares
 
 }
 
