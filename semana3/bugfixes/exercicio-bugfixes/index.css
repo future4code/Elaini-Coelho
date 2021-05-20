@@ -45,6 +45,7 @@ div>p:first-child {
     color: white;
     display: block;
     margin: auto;
+    margin-top: 50px;
 
 }
 
@@ -77,7 +78,7 @@ div>p:first-child {
 }
 
 #container-de-descricao>ol {
-    padding: 15px 0px;
+    padding: 200px;
 }
 
 #container-para-comprar {
@@ -89,6 +90,7 @@ div>p:first-child {
     padding: 100px 0;
     font-size: 60px;
 }
+
 
 
 /**
@@ -106,6 +108,7 @@ table {
     width: 60%;
     text-align: center;
     margin: auto;
+
 }
 
 td button {
@@ -114,6 +117,7 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
+
 }
 
 .container-do-search {
@@ -132,6 +136,7 @@ td button {
     color: black;
     margin: auto;
     display: block;
+    margin-top: 50px;
 }
 
 #back-button:hover {
