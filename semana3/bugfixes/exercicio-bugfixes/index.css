@@ -31,6 +31,13 @@ img {
 
 }
 
+img:hover {
+    opacity: 0.5;
+}
+img:active {
+    opacity: 1;
+}
+
 div>p:first-child {
     display: inline;
 }
@@ -75,10 +82,16 @@ div>p:first-child {
     background-color: #2274a5;
     color: white;
    padding-top: 190px;
+
 }
 
 #container-de-descricao>ol {
-    padding: 200px;
+    padding-left: 20px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
 
 #container-para-comprar {
