@@ -137,3 +137,8 @@ td button {
 button:hover {
     background-color: white;
 }
+
+div>input {
+    border: none;
+    border-bottom: solid 1px;
+}
