@@ -1,0 +1,77 @@
+/* 
+configurações gerais
+*/
+*{
+  width: 95%;
+  background: linear-gradient(to bottom, #f7dcdc  50%,#b6b59f 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+
+}
+/***********                 **********/
+
+/* configurações de cabeçalho */
+header {
+    text-align: right;
+    padding: 10px;
+    margin: 15px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    padding: 15px;;
+}
+a:hover {
+    background-color: #565656;
+    color: black;
+    text-decoration: none;
+    font-style: inherit;
+  }
+  
+  a:active {
+    color: lightcyan;
+    background-color:grey;
+  }
+/***********                 **********/
+
+/*
+configurações body
+*/
+
+div>h1 {
+    font-size: inherit 1em;
+    padding: 10px;
+    margin-left: 190px;
+    margin-top: 90px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(199, 74, 74);
+}
+
+div>p {
+    padding: 10px;
+    text-align: justify; 
+    margin-left: 220px;
+    letter-spacing: 5px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(38, 55, 78);
+
+}
+
+
+
+
+
+
+/*
+Configurações redes sociais 
+*/
+#redes {
+  width: 30px;
+  left: 90%;
+  top: 60%;
+  position: fixed;
+  display: block;
+  padding: 10px;
+
+}
