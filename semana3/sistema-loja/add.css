@@ -1,0 +1,43 @@
+a {
+    color: #46566a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.home {
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 2.5em;
+    font-family:monospace;
+    color: rgba(70, 35, 29, 0.534);
+}
+
+h2 {
+    padding: 10px;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(155, 132, 32, 0.87);
+}
+
+.add {
+    color: rgba(46, 46, 10, 0.87);
+    font-style: oblique;
+    padding: 5px;
+}
+.form-add {
+    padding: 5px;
+}
+
+button {
+    background-color: wheat;
+    font-style: italic;
+}
+body {
+    background-color: rgb(236, 236, 201);
+    
+}
