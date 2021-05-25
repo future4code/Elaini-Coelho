@@ -1,0 +1,69 @@
+/* Gerais */
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* Cabeçalho */
+
+header {
+    background-color:rgb(193, 255, 122);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    grid-column: 1/-1;
+    padding-right: 50px;
+    /* position: fixed; */
+    padding-left: 20px;
+}
+.icone {
+    width: 30px;
+    margin: 0 6px 6px 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-columns: 300px 1fr;
+    position: fixed;
+}
+
+.icone-e-texto {
+    display: flex;
+    align-items: center;
+  }
+/* Body */
+
+
+h2{
+    padding: 5px 0 10px 0;
+}
+
+main {
+    text-align: center;
+    padding: 10px;
+    color: rgb(65, 8, 38);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(171, 197, 56, 0.308);
+}
+video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    margin: auto;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: rgb(193, 255, 122);
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+}
