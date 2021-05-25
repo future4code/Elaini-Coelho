@@ -1,0 +1,157 @@
+/* 
+configurações gerais
+*/
+*{
+    width: 90%;
+    background: linear-gradient(to bottom, #b6b59f  50%,#f7dcdc 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+  
+
+}
+/***********                 **********/
+
+/* configurações de cabeçalho */
+header {
+    text-align: right;
+    padding: 10px;
+    margin-left: 200px;
+    margin-top: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    padding: 15px;;
+}
+
+a:hover {
+    background-color: #565656;
+    color: black;
+    text-decoration: none;
+    font-style: inherit;
+}
+  
+a:active {
+    color: lightcyan;
+    background-color:grey;
+}
+
+
+.contato-cabecalho {
+    display: block;
+}
+
+.contato-cabecalho h1, .contato-cabecalho h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.contato-page {
+    display: flex;
+}
+
+/***********                 **********/
+
+/*
+configurações body
+*/
+div h1{
+    font-size: inherit 1em;
+    padding: 10px;
+    margin-left: 90px;
+    margin-top: 80px;
+    letter-spacing: 1px;
+   color: rgb(199, 74, 74);
+}
+
+div>h3{
+        font-size: 1.2em;
+        padding: 15px;
+        text-align: center;
+        letter-spacing: 1px;
+    color:rgb(90, 46, 46)
+
+}
+
+h4 {
+    color: rgb(24, 28, 65);
+    letter-spacing: 1px;
+}
+p{
+    color: rgb(24, 28, 65);
+}
+
+#nome {
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 10px !important;
+}
+
+#email {
+    display: block;
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 10px !important;
+}
+
+#descricao {
+
+    width: 351px;
+    height: 123px;
+    padding: 10px 10px 50px;
+    max-width: 500px;
+    margin-bottom: 10px !important;
+}
+
+#botao {
+    width: 60px;
+    display: block;
+    border-radius: 10px;
+    background-color: rgb(199, 199, 199);
+}
+
+h4 {
+    text-align: center;
+
+}
+
+
+#botao:active {
+    background-color: rgb(94, 116, 116);
+}
+
+#mensagem {
+    margin-left: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+    margin-left: 30px ;
+}
+textarea{
+    margin-left: 30px;
+}
+
+
+
+
+/***********                 **********/
+
+/*
+Configurações redes sociais 
+*/
+
+#redes {
+    width: 30px;
+    left: 90%;
+    top: 60%;
+    position: fixed;
+    display: block;
+    padding: 10px;
+  
+  }
+  
+/***********                 **********/
+
+

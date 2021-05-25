@@ -1,0 +1,94 @@
+/* 
+configurações gerais
+*/
+*{
+  width: 95%;
+  background: linear-gradient(to bottom, #f7dcdc  50%,#b6b59f 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+
+}
+/***********                 **********/
+
+/* configurações de cabeçalho */
+header {
+    text-align: right;
+    padding: 10px;
+    margin: 15px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    padding: 15px;;
+}
+a:hover {
+    background-color: #565656;
+    color: black;
+    text-decoration: none;
+    font-style: inherit;
+  }
+  
+  a:active {
+    color: lightcyan;
+    background-color:grey;
+  }
+/***********                 **********/
+
+
+/*
+configurações body
+*/
+h1 {
+  text-align: center;
+
+  color:rgb(199, 74, 74) ;
+}
+h3 {
+  font-size: inherit;
+  text-align: center;
+  color:rgb(90, 46, 46)
+}
+p{
+  text-align: justify;
+  margin-left: 390px;
+
+  color: rgb(24, 28, 65);
+}
+.imagem1 {
+  width: 500px;
+  display: inline-flex;
+  margin-left: 100px;
+
+}
+
+#link {
+  text-decoration: underline;
+
+  color: rgb(24, 28, 65);
+}
+.imagem2 {
+  width: 500px;
+  display: inline;
+}
+
+
+
+/***********                 **********/
+
+/*
+Configurações redes sociais 
+*/
+
+#redes {
+  width: 30px;
+  left: 90%;
+  top: 60%;
+  position: fixed;
+  display: block;
+  padding: 10px;
+
+}
+
+  
+
+/***********                 **********/
