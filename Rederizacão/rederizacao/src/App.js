@@ -48,7 +48,7 @@ proximaEtapa = () => {
     const mudançasDePagina = () => {
       switch (this.state.etapa) {
         case 1:
-          return <Etapa1/>;
+          return <Etapa1/> ;
         
         case 2: 
           return <Etapa2/>

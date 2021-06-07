@@ -1,40 +1,25 @@
 import React from 'react'
-
+import PerguntaAberta from './perguntasAbertas'
 export default class Etapa1 extends React.Component {
-state = {
-    nãoTerminou: ""
-}
-
-onChangeNãoTerminou = (e) => {
-    this.setState({inputNãoTerminou: e.target.value})
-}
-
-
 
 render () {
 
     return (
-        <div>
+  <div>
+        <h2>ETAPA 3</h2>
+        <PerguntaAberta
+          pergunta={"1. Por que você não terminou nenhum curso?"}
+        />
 
-        <h1>ETAPA 3 - INFORMAÇÕES GERAIS DE ENSINO</h1>
-        <ul>
-            <li>Por que você não terminou o curso de graduação?</li>
-            <input
-                value={this.state.inputNãoTerminou}
-                type="text"
-                onChange={this.onChangeNãoTerminou}
-            />
+        <p>4. Qual é a sua escolaridade?</p>
 
-            <li>Você fez algum curso complementar?</li>
-            <select>
-                <option></option>
-                <option>Curso Tecnico</option>
-                <option>Cursos de inglês</option>
-                <option>Não fiz curso algum</option>
-            </select>
-        </ul>
+        <select>
+          <option>Cursos de inglês</option>
+          <option>Ensino médio incompleto</option>
+          <option>Não fiz curso complementar</option>
+        </select>
         
-        </div>
+    </div>
     )
 }
 
