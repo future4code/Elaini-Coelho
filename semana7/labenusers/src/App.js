@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components'
 import Usuarios from './componets/Usuarios'
 import TelaCadastro from './componets/telaCadastro'
+import Detalhes from './componets/Detalhe'
 
 
 export default class App extends React.Component {
@@ -16,8 +16,10 @@ export default class App extends React.Component {
       case "cadastro":
         return <TelaCadastro irParaUsuario={this.irParaUsuario} />
       case "usuario":
-        return <Usuarios irParaCadastro={this.irParaCadastro} />
-      default:
+        return <Usuarios irParaCadastro={this.irParaCadastro} irParaDetalhes={this.irParaDetalhes} />
+      case "detalhes":
+        return <Detalhes irParaUsuario={this.irParaUsuario} />
+        default:
         return <div>Erro</div>
     }
   }
@@ -31,6 +33,9 @@ export default class App extends React.Component {
       this.setState({telaAtual: "usuario"})
     }
 
+    irParaDetalhes = () => {
+      this.setState({telaAtual: "detalhes"})
+    }
   render() {
 
     return (

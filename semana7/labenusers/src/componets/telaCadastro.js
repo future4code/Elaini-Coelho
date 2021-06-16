@@ -1,7 +1,41 @@
 
 import axios from "axios"
 import React from "react"
+import styled from "styled-components"
 
+
+const H2 = styled.h2 ` 
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    text-align: center;
+`
+const Input = styled.input ` 
+    background-color: burlywood;
+    border: none;
+    display: block;
+    padding: 5px;
+    align-items: center;
+    margin: 0 auto 7px auto;
+`
+const Button2 = styled.button ` 
+    background-color: aliceblue;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: hand;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+`
+
+const Button = styled.button ` 
+    background-color: aliceblue;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: hand;
+    cursor: pointer;
+`
 export default class TelaCadastro extends React.Component {
     
     state={
@@ -40,21 +74,23 @@ export default class TelaCadastro extends React.Component {
     render() {
         return(
             <div>
-                <button onClick={this.props.irParaUsuario} >Usuarios</button>
-                <h2>Cadastro</h2>
+                <Button onClick={this.props.irParaUsuario} >LISTA</Button>
+                <H2>Cadastro</H2>
 
-                <input
+                <Input
                 placeholder={"Nome"}
                 value={this.state.nome}
                 onChange={this.inputNome}
                 />
-                <input
+                
+                <Input
                 placeholder={"E-mail"}
                 onChange={this.inputEmail}
                 value={this.state.email}
                 type={"email"}
                 />
-                <button onClick={this.salvarUser}>Salvar</button>
+                
+                <Button2 onClick={this.salvarUser}>Salvar</Button2>
             </div>
         )
     }

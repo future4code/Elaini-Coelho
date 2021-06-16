@@ -60,6 +60,8 @@ export default class Usuarios extends React.Component {
                 Authorization: "elaini-coelho-molina"
             }
         }).then((res) => {
+            if(alert("Tem certeza?")) { 
+            }
             this.receberUser()
         })
         .catch((err) => {
@@ -71,7 +73,7 @@ export default class Usuarios extends React.Component {
         const ListaUsers = this.state.logins.map((usuario) => {
             return (
                 <Conteiner key={usuario.id}>
-                    {usuario.name}
+                     {usuario.name}
                     <Button onClick={() => this.deleteUser(usuario.id)} >×</Button>
                 </Conteiner>
             )
@@ -79,12 +81,12 @@ export default class Usuarios extends React.Component {
 
         return(
             <div>
-                <Button onClick={this.props.irParaCadastro} >VOLTAR</Button>
-                <H2>Usuarios</H2>
+                
+                <H2>Detalhes</H2>
 
-                {ListaUsers}  
-     
-                <Button onClick={this.props.irParaDetalhes} >DETALHES</Button>
+                {ListaUsers}   
+
+              <Button onClick={this.props.irParaUsuario} >VOLTAR</Button>
             </div>
         )
     }
