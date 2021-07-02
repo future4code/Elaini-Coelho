@@ -1,6 +1,6 @@
 import React from "react";
-import Pessoas from './Inicial/AdcPessoa';
 import styled from "styled-components";
+import AppRouter from "./Components/Router";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
@@ -13,8 +13,10 @@ const RootDiv = styled.div `
 
 const App = () => {
   return (
-    <RootDiv className='pt-5 pe-3 pb-5 ps-3 bg-dark'>
-        <Pessoas/>
+    <RootDiv className='pt-0 pe-0 pb-5 ps-0 bg-dark'>
+
+     <AppRouter/>
+
     </RootDiv>
   );
 }
