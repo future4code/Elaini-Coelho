@@ -70,12 +70,10 @@ const Matchs = (props) => {
 
     return (
         <ConteinerMatch>
-            
-            <BotãoDeSimOuNão onClick={() => sendLike(false)} type="submit" ><Imagens src={nao} /> </BotãoDeSimOuNão>
+
             <BotãoDeSimOuNão  onClick={() => sendLike(true)} ><Imagens src={sim} /></BotãoDeSimOuNão>
+            <BotãoDeSimOuNão onClick={() => sendLike(false)} type="submit" ><Imagens src={nao} /> </BotãoDeSimOuNão>
             
-
-
         </ConteinerMatch>    
     )
 }
