@@ -48,12 +48,15 @@ const Pessoas = () => {
             setError(error.message)
             setRecebendo(false)
         })
+
+        
     }
 
 
     useEffect(() => {
         proximoPerfil()
     }, [])
+
 
     if(recebendo) {
         return(
@@ -63,7 +66,7 @@ const Pessoas = () => {
         )
     }
 
-    if(error){
+    else{
         <div className="alert alert-light" role="alert">
             {error}
         </div>
@@ -74,7 +77,7 @@ const Pessoas = () => {
 
         <Conteiner> 
 
-            <div className="card mb-3 shadow-lg border border-dark rounded-lg">
+            <div className="card mb-3 Larger shadow-lg p-3 mb-2 bg-white rounded border-white ">
                 <ImagemCard src={perfil.photo} className="card-img-top" alt={perfil.name}/>
                 <TextoBody className="card-body">
                     <h5 className="card-title">{perfil.name}</h5>

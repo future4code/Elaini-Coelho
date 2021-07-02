@@ -25,7 +25,9 @@ const ConteinerMatch = styled.div `
     margin: auto;
 `
 
+
 const Matchs = (props) => {
+
 
     const URL = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/elaini-coelho/choose-person'
 
@@ -62,10 +64,16 @@ const Matchs = (props) => {
 
 
 
+
+
+
+
     return (
         <ConteinerMatch>
-            <BotãoDeSimOuNão  onClick={() => sendLike(true)} ><Imagens src={sim} /></BotãoDeSimOuNão>
+            
             <BotãoDeSimOuNão onClick={() => sendLike(false)} type="submit" ><Imagens src={nao} /> </BotãoDeSimOuNão>
+            <BotãoDeSimOuNão  onClick={() => sendLike(true)} ><Imagens src={sim} /></BotãoDeSimOuNão>
+            
 
 
         </ConteinerMatch>    

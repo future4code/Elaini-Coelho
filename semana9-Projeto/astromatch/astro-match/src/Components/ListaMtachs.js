@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import styled from "styled-components";
 import Navgar from './Navbar'
+import Bootbox from 'bootbox-react'
 
 
 const CardMatch = styled.div `
@@ -15,7 +16,6 @@ const ImageMatch = styled.img `
     object-fit: cover;
     object-position: top;
 `
-
 
 function Lista() {
 
@@ -58,14 +58,13 @@ function Lista() {
 
     const Url = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/elaini-coelho/clear'
 
-
     const apagarMensagem = () => {
         axios
           .put(Url)
           .then((res) =>{
-            getMatches()
-
-            return res.data
+                getMatches()
+               alert("Tem certeza?");
+            
           })
           .catch((error) => {
             return alert(error)
