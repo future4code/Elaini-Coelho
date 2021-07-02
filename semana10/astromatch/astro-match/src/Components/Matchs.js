@@ -36,7 +36,7 @@ const Matchs = (props) => {
                 id: props.perfilId,
                 choice: like
             }
-    
+
             axios.post(URL, requestData, {
                 headers: {
                     'Content-Type': "application/json"
@@ -44,7 +44,7 @@ const Matchs = (props) => {
             })
             .then((res) => {
                 return res.data
-        
+
             })
             .catch((err) => {
                 return (
@@ -52,7 +52,7 @@ const Matchs = (props) => {
                         {err.message}
                 </div>
                 )
-                
+
             })
         }
 
@@ -66,7 +66,7 @@ const Matchs = (props) => {
         <ConteinerMatch>
             <BotãoDeSimOuNão  onClick={() => sendLike(true)} ><Imagens src={sim} /></BotãoDeSimOuNão>
             <BotãoDeSimOuNão onClick={() => sendLike(false)} type="submit" ><Imagens src={nao} /> </BotãoDeSimOuNão>
-            
+
 
         </ConteinerMatch>    
     )

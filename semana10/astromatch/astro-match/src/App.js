@@ -13,7 +13,7 @@ const RootDiv = styled.div `
 
 const App = () => {
   return (
-    <RootDiv className='pt-0 pe-0 pb-5 ps-0 bg-dark'>
+    <RootDiv className='pt-0 pe-0 pb-5 ps-0 bg-danger'>
 
      <AppRouter/>
 

@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 
 
 const Logo = styled.img ` 
-    width: 155px;
+    width: 200px;
     margin-left: 50px;
     display: flex;
     object-fit:scale-down;
-    height: 50px;
+    height: 55px;
 `
 const Navgar = (props) => {
 
@@ -19,7 +19,8 @@ const Navgar = (props) => {
             <nav className="navbar navbar-light bg-light">
                 <Logo src={astrologo} />
                 <form className="form-inline">
-                    <Link to='/lista' className='btn btn-dark me-3'>Meus matchs</Link>
+                    <Link to='/inicio' className='btn btn-danger me-3'>HOME</Link>
+                    <Link to='/lista' className='btn btn-danger me-3'>MATCHS</Link>
                 </form>
             </nav>
         </div>

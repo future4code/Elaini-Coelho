@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import styled from "styled-components";
+import Navgar from './Navbar'
 
 
 const CardMatch = styled.div `
@@ -10,9 +11,9 @@ const CardMatch = styled.div `
 `
 
 const ImageMatch = styled.img `
+    height: 120px;
     object-fit: cover;
-    object-position: center;
-    box-sizing: border-box;
+    object-position: top;
 `
 
 
@@ -38,15 +39,15 @@ function Lista() {
 
     const renderizaLista = matches.map((match) => {
         return (
-            <CardMatch className="card mb-3 text-dark">
+            <CardMatch className="card mb-3 mt-5 text-dark">
                 <div className="row g-0">
                     <div className="col-md-3">
                         <ImageMatch src={match.photo} className="img-fluid rounded-start" alt={match.name}/>
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                            <h5 className="card-title">{match.name}</h5>
-                            <p className="card-text">{match.bio}</p>
+                            <h5 className="card-title text-dark">{match.name}</h5>
+                            <p className="card-text text-success ">🗨️ Oiiiiiiiiiiiiiiii!</p>
                         </div>
                     </div>
                 </div>
@@ -54,8 +55,31 @@ function Lista() {
         )
     })
 
+
+    const Url = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/elaini-coelho/clear'
+
+
+    const apagarMensagem = () => {
+        axios
+          .put(Url)
+          .then((res) =>{
+            getMatches()
+
+            return res.data
+          })
+          .catch((error) => {
+            return alert(error)
+        })
+    
+    }
+
     return(
-        <div className='container py-3 text-light'>
+        <div className=' pt-0 pe-0 pb-5 ps-0 text-light'>
+            <Navgar />
+
+            <div>
+                <button  type="submit" className='btn btn-dark ms-3 mt-3' onClick={apagarMensagem}>Apagar</button>
+            </div>
             {renderizaLista}
         </div>
     )
