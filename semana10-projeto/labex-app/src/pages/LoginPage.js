@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Button from '../styled/ButtonGeral'
 import {Lnreye} from '../styled/EmojinOlhos'
+import olhoAberto from '../img/olhos.png'
 
+import { OlhosImagem } from '../styled/TamanhoImagemOlhos'
 export function LoginPage () {
 
     const [password, usePassword] = useState("password")
-
     const trocandoType = () => {
         if(password === "password") {
             // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -16,6 +17,7 @@ export function LoginPage () {
             usePassword('password')
         }
     }
+
     return (
 
         <div>
@@ -26,7 +28,7 @@ export function LoginPage () {
             <div>
 
                 <input type={password} name="password" placeholder="Digite sua senha"/>
-                <Lnreye onClick={trocandoType} >Ver</Lnreye>
+                <Lnreye onClick={trocandoType}> <OlhosImagem src={olhoAberto}/> </Lnreye>
             
             </div>
             <Button >Voltar</Button>
