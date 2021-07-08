@@ -1,5 +1,5 @@
 import React from "react";
-import { AppConteiner } from "../Rotas/Route";
+import { AppConteiner } from "./Rotas/AppConteiner";
 
 function App() {
   return (
