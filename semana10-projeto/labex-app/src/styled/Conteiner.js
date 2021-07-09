@@ -5,7 +5,7 @@ export const Conteiner = styled.div `
     margin: auto;
     display: flex;
     flex-direction: column;
-    height: max-content;
+    height: 89vh;
     background-color:#fdfaea;
     @media(max-width: 780px and min-width= 410px) {
         width: 990px;

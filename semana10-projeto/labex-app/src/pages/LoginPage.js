@@ -6,10 +6,14 @@ import { useHistory } from "react-router-dom";
 import { Conteiner } from '../styled/Conteiner'
 import { ConteinerInput } from '../styled/ConteinerInput';
 import { OlhosImagem } from '../styled/TamanhoImagemOlhos'
-export function LoginPage () {
-    const history = useHistory();
+import { TextoGeral } from '../styled/SloganPageHome'
+import axios from 'axios';
 
-    const [password, usePassword] = useState("password")
+
+export function LoginPage () {
+
+    const [password, usePassword] = useState("password");
+
     const trocandoType = () => {
         if(password === "password") {
             // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -21,40 +25,84 @@ export function LoginPage () {
         }
     }
 
+
+    const history = useHistory();
+    const [email, setEmail] = useState("");
+    const [passwordInput, setPasswordInput] = useState("");
+
+    const onChangeEmail = (event) => {
+        setEmail(event.target.value);
+      };
+    
+      const onChangePassword = (event) => {
+        setPasswordInput(event.target.value);
+      };
+
     const goToLogin = () => {
-        history.push("/");
+        history.push("/login");
     };
+
+    const LoginAdmin = () => {
+        const body = {
+            "email": "astrodev@gmail.com.br",
+            "password": "123456"
+        };
+        axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/elaini-coelho-molina/login", body, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then((res) => {
+            console.log(res.data)
+            history.push("/admin/trips/list")
+        })
+        .catch((err) => {
+            console.log(err)
+            alert("Usario não encontrado.")
+        })
+    }
+
+    const onSubmitForm = (event) => {
+              event.preventDefault();
+        // eslint-disable-next-line no-undef
+              LoginAdmin()
+            };
 
     return (
 
         <Conteiner>
-    
-            <h2>Login</h2>
-
-            <ConteinerInput 
-            placeholder="E-mail"
-            type={"email"}
-            name={"email"}
-            required
-            />
-
-            <div>
-
-                <ConteinerInput 
-                required
-                type={password} 
-                name={"password"}
-                placeholder="Digite sua senha"/>
-                <Lnreye onClick={trocandoType}> <OlhosImagem src={olhoAberto}/> </Lnreye>
-                
-            </div>
-            
-            <Button>Entrar</Button>
             <Button onClick={goToLogin} >Voltar</Button>
+           
+            <TextoGeral>Login</TextoGeral>
 
-            
-       
+            <form onSubmit={onSubmitForm} >
+                <div>
+                <ConteinerInput 
+                placeholder="E-mail"
+                type={"email"}
+                name={"email"}
+                value={email}
+                onChange={onChangeEmail}
+                required
+                />
+                </div>
+                
+                <div>
 
+                    <ConteinerInput 
+                    required
+                    type={password} 
+                    name={"password"}
+                    value={passwordInput}
+                    onChange={onChangePassword}
+                    placeholder="Digite sua senha"/>
+                    <Lnreye onClick={trocandoType}> <OlhosImagem src={olhoAberto}/> </Lnreye>
+                    
+                </div>
+                <div>
+                    <Button>Entrar</Button>
+                </div>
+            </form>
         </Conteiner>
     )
 }

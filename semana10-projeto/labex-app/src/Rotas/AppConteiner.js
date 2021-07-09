@@ -32,12 +32,12 @@ export const AppConteiner = () => {
                     <AdminHomePage/>
                 </Route>
 
-                <Route path="/admin/trips/:id" >  
-                    <TripDetails/>
-                </Route>
-
                 <Route path="/admin/trips/create">
                     <CreateTrip/>
+                </Route>
+
+                 <Route path="/admin/trips/:id" >  
+                    <TripDetails/>
                 </Route>
 
                 <Route>
