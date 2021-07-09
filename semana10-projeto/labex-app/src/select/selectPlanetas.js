@@ -1,9 +1,10 @@
 import React from 'react'
+import { SelectStyled } from '../styled/selectStyled'
 
 export const SelectPlanetas = () => {
     return (
         <div>
-             <select>
+             <SelectStyled>
                 <option>Escolha um planeta</option>
                 <option>Mercúrio</option>
                 <option>Vênus</option>
@@ -14,7 +15,7 @@ export const SelectPlanetas = () => {
                 <option>Urano</option>
                 <option>Netuno</option>
 
-            </select>
+            </SelectStyled>
         </div>
     )
 }

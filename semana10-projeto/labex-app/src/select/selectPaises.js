@@ -1,9 +1,10 @@
 import React from 'react'
+import { SelectStyled } from '../styled/selectStyled'
 
 export const SelectPaises = () => {
     return (
         <div>
-            <select name="paises" id="paises">
+            <SelectStyled name="paises" id="paises">
                     <option selected="selected">Escolha um país</option>
                     <option value="Brasil" >Brasil</option>
                     <option value="Afeganistão">Afeganistão</option>
@@ -231,7 +232,7 @@ export const SelectPaises = () => {
                     <option value="Wallis e Futuna">Wallis e Futuna</option>
                     <option value="Zimbabwe">Zimbabwe</option>
                     <option value="Zâmbia">Zâmbia</option>
-                </select>
+                </SelectStyled>
         </div>
     )
 }

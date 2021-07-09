@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from '../styled/ButtonGeral'
 import { useHistory } from "react-router-dom";
+import { Conteiner } from '../styled/Conteiner'
+import { TextoGeral } from '../styled/SloganPageHome';
 
 export function HomePage () {
     const history = useHistory();
@@ -14,12 +16,17 @@ export function HomePage () {
     };
 
     return (
-        <div>
-            <h2>LabeX</h2>
-          <Button onClick={goToTripList} >Viagens</Button>
+        <Conteiner>
 
-          <Button onClick={goToLogin} >Adminstração</Button>
+            <TextoGeral>Descubra um mundo diferente</TextoGeral>
 
-        </div>
+            <div>
+                <Button onClick={goToTripList} >Viagens</Button>
+
+                <Button onClick={goToLogin} >Adminstração</Button>
+
+            </div>
+         
+        </Conteiner>
     )
 }

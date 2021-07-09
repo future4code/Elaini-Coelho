@@ -3,8 +3,12 @@ import Button from '../styled/ButtonGeral'
 import { Conteiner } from '../styled/Conteiner';
 import { ConteinerInput } from '../styled/ConteinerInput'
 import { SelectPaises } from '../select/selectPaises'
+import { FormEstilizado } from '../styled/formStyled';
 import { useHistory } from "react-router-dom";
 import useForm from "../hooks/useForm";
+import { SelectStyled } from '../styled/selectStyled'
+import { TextoGeral } from '../styled/SloganPageHome'
+import axios from 'axios';
 
 export function ApplicationForm () {
 
@@ -28,17 +32,39 @@ export function ApplicationForm () {
         history.push("/");
     };
 
+    const applyTrip = () => {
+        const body = {
+            name: "",
+            age: "",
+            applicationText: "",
+            profission: "",
+            country: ""
+        }
+        axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/elaini-coelho-molina/trips/VwFABq4IySCvzdlvbA6q/apply", body, {
+            headers: { 
+                'Content-Type': 'application/json'
+            }
+        })
+        .then((res) => {
+            console.log(res.data)
+        })
+        .catch((err) => {
+            console.log(err.message)
+        })
+    }
+
 
 
     return (
         <Conteiner>
-            <h2>Formulario de incrição</h2>
+            
+            <TextoGeral>Formulario de incrição</TextoGeral>
 
-                <form onSubmit={travelregistration} >
+                <FormEstilizado onSubmit={travelregistration} >
 
-                    <select>
+                    <SelectStyled>
                         <option>Escolha uma viagem</option>
-                    </select>
+                    </SelectStyled>
 
                     <ConteinerInput
                         name={"nome"}
@@ -85,8 +111,9 @@ export function ApplicationForm () {
                     />
                     
 
-                    <Button>Enviar</Button>
-                </form>
+                    <Button onClick={() => applyTrip()} >Enviar</Button>
+
+                </FormEstilizado>
 
             <Button onClick={goToHome} >Voltar</Button>
 

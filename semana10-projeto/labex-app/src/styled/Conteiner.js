@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const Conteiner = styled.div ` 
-    display: flex;
-    flex-direction: column;
     text-align: center;
     margin: auto;
-    width: 500px;
-
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    background-color:#fdfaea;
+    @media(max-width: 780px and min-width= 410px) {
+        width: 990px;
+        height: max-content;
+    }
 `
 
