@@ -65,26 +65,20 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
 
-   let par =0
-
-   for(let i=0; i<n.length; i++)
-   {
-       if(n[i]%2 == 0)
-       {
-       par++;
-       par = n[i];
-   
-       }
+    let pares = []
+    for(let i = 0; pares.length < n; i++) {
+        if(i % 2 === 0) {
+            pares.push(i)
+        }
     }
-
-    return par
-   
+    return pares
   
 }
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
 
+    
 }
 
 // EXERCÍCIO 10
