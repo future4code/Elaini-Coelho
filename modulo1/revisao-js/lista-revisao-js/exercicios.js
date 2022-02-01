@@ -77,18 +77,30 @@ function retornaNPrimeirosPares(n) {
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
-
     
+    if(ladoA+ladoB> ladoC && ladoA+ladoC>ladoB && ladoB+ladoC>ladoA) {
+       
+        if(ladoA === ladoB && ladoA === ladoC){
+            return "Equilátero"
+        }
+        else if(ladoA === ladoB || ladoA === ladoC || ladoB === ladoC){
+            return "Isósceles"
+        }
+
+        else{
+            return "Escaleno"
+        }
+    }
 }
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
   
+
 }
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
 }
 
 // EXERCÍCIO 12
